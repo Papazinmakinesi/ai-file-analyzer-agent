@@ -195,6 +195,6 @@ If the OpenAI API is unavailable or quota is exceeded, the system automatically 
 
 
 \## Author
-
+Ekin Taner
 
 
