@@ -69,7 +69,7 @@ For configuration, the project includes an .env file format for the OpenAI API k
 
 OPENAI_API_KEY=your_api_key_here
 
-> **Önemli Güvenlik Notu:** Proje, geliştirme aşamasında geçerli bir API anahtarı kullanılarak başarıyla çalıştırılmış ve test edilmiştir. Ancak güvenlik sebebiyle kimlik bilgilerinin sızmasını önlemek adına yerel `.env` dosyası GitHub deposuna gönderilmemiş (pushlanmamış), `.gitignore` dosyası ile korunmuştur. Projeyi çalıştıracak kişilerin `.env.example` şablonundan bir `.env` dosyası oluşturup kendi API anahtarlarını girmeleri gerekmektedir.
+> **Security Note:** I tested this application using a valid OpenAI API key to verify the AI integration. However, to keep my credentials safe and avoid leakage, I have excluded the `.env` file from Git using `.gitignore`. If you want to run this locally, please copy `.env.example` to a new `.env` file and add your own OpenAI API key.
 
 If the API key is missing, invalid, or has no available quota, the system still runs by using the local fallback analyzer.
 
