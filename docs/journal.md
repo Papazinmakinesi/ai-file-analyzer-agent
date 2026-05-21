@@ -69,6 +69,8 @@ For configuration, the project includes an .env file format for the OpenAI API k
 
 OPENAI_API_KEY=your_api_key_here
 
+> **Önemli Güvenlik Notu:** Proje, geliştirme aşamasında geçerli bir API anahtarı kullanılarak başarıyla çalıştırılmış ve test edilmiştir. Ancak güvenlik sebebiyle kimlik bilgilerinin sızmasını önlemek adına yerel `.env` dosyası GitHub deposuna gönderilmemiş (pushlanmamış), `.gitignore` dosyası ile korunmuştur. Projeyi çalıştıracak kişilerin `.env.example` şablonundan bir `.env` dosyası oluşturup kendi API anahtarlarını girmeleri gerekmektedir.
+
 If the API key is missing, invalid, or has no available quota, the system still runs by using the local fallback analyzer.
 
 For data conversion, the system accepts either plain text or a .txt file. When file input is used, the file reader converts the file content into a Python string. The text processor then removes unnecessary spaces and empty lines. The cleaned text is passed to the analyzer module, which converts it into structured output containing a summary, keywords, and a classification label.

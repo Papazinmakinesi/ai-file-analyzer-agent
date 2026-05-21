@@ -65,6 +65,8 @@ Install the required dependencies: pip install -r requirements.txt
 The project includes an .env file for configuration.
 If a valid OpenAI API key is available, the system can use the external AI model for text analysis.
 
+> **Önemli Güvenlik Notu:** Proje, geliştirme aşamasında geçerli bir API anahtarı kullanılarak başarıyla çalıştırılmış ve test edilmiştir. Ancak güvenlik sebebiyle kimlik bilgilerinin sızmasını önlemek adına yerel `.env` dosyası GitHub deposuna gönderilmemiş (pushlanmamış), `.gitignore` dosyası ile korunmuştur. Projeyi çalıştıracak kişilerin `.env.example` şablonundan bir `.env` dosyası oluşturup kendi API anahtarlarını girmeleri gerekmektedir.
+
 If the API key is missing, invalid, or has no available quota, the project still runs with the local fallback analyzer. This was added so the application can still be tested and demonstrated.
 
 ## Running the Application
